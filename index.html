@@ -1,53 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Molten Inc Homepage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <img src="images/redbluelava.jpg" alt="Red and Blue lava background texture">
-    <a src=""
+    <div id="side-bg-image">
+        <img id="molten-logo" src="/images/Moltenlogo.png">
+        <p id="trouble-link">Having trouble? <a href="">Click here</a></p>
+    </div>
 
-    <p>This is not a real online service! You know you need something like this in you life to help you realize your deepest dreams. Sign up now to get started.
-    </p>
-    <p>You know you want to.</p>
-    <form action="http://httpbin.org/post" method="post">
-        <div>
-            <label for="first_name">First Name:</label>
-            <input type="text" name="first_name" id="first_name" required>
-        </div>
-        
-        <div>
-            <label for="last_name">Last Name:</label>
-            <input type="text" name="last_name" id="last_name" required>
+    <div class="column">
+        <div id="intro-statement">
+            <p>This is not a real online service! You know you need something like this in you life to help you realize
+                your
+                deepest dreams. Sign up now to get started.
+            </p>
+            <p>You know you want to.</p>
         </div>
 
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required>
-        </div>
-        
-        <div>
-            <label for="phone_number">Phone Number:</label>
-            <input type="tel" name="phone_number" id="phone_number">
-        </div>
+        <form id="signup-form" action="http://httpbin.org/post" method="post">
+            <div>
+                <div>
+                    <label for="first_name">First Name:</label>
+                    <input type="text" name="first_name" id="first_name" required>
+                </div>
 
-        <div>
-            <label for="user_password">Password:</label>
-            <input type="password" id="user_password" name="user_password" required>
-        </div>
+                <div>
+                    <label for="phone_number">Phone Number:</label>
+                    <input type="tel" name="phone_number" id="phone_number">
+                </div>
 
-        <div>
-            <label for="confirm_password">Confirm Password:</label>
-            <input type="password" id="confirm_password" name="user_password" required>
-        </div>
+                <div>
+                    <label for="user_password">Password:</label>
+                    <input type="password" id="user_password" name="user_password" required>
+                </div>
+            </div>
 
-        <button type="submit">Sign-up</button>
-    </form>
-    
-    <p>Having trouble? <a href="">Click here</a></p>
+            <div>
+                <div>
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" name="last_name" id="last_name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div>
+                    <label for="confirm_password">Confirm Password:</label>
+                    <input type="password" id="confirm_password" name="user_password" required>
+                </div>
+            </div>
+
+            <div>
+                <button type="submit">Sign-up</button>
+            </div>
+        </form>
+    </div>
+
+
 </body>
+
 </html>

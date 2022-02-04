@@ -1,0 +1,80 @@
+body {
+    font-size: calc(1em + .4vw);
+    /* background-image: url("images/redbluelava.jpg");
+    background-position: left;
+    background-repeat: no-repeat; */
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+#molten-logo {
+    max-width: 100%; 
+    margin: 160px auto 0 auto;
+    display: block;
+    padding: 2px;
+    opacity: 100%;
+    background-color:rgba(211, 211, 211, .8);
+    border-radius: 50%;
+}
+
+#side-bg-image {
+    background-image: url("/images/redbluelava.jpg");
+    background-repeat:no-repeat;
+    width: 100%;
+    max-width: 50vw;
+    max-height: 100vh;
+}
+
+.column{
+    display: flex;
+    /* height: 100vh; */
+    flex-direction: column;
+    align-items: center;
+}
+
+#intro-statement {
+    background-color:rgba(211, 211, 211, .8);
+    margin: 30px auto;
+    max-width: 60%;
+    padding: 10px 10vw;
+    display: block;
+    text-align: center;
+}
+
+#intro-statement p {
+    width: 100%;
+}
+
+#signup-form {
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    border-radius: 20px;
+    margin: 150px 20px 0 20px;
+    padding: 20px;
+}
+
+#signup-form div {
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#signup-form div input {
+    border-radius: 4px;
+    padding: 4px;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    padding: 4px 10px;
+}
+
+#trouble-link {
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 10;
+}
