@@ -1,5 +1,5 @@
 body {
-    font-size: calc(1em + .4vw);
+    font-size: calc(1em + .3vw);
     /* background-image: url("images/redbluelava.jpg");
     background-position: left;
     background-repeat: no-repeat; */
@@ -51,7 +51,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     max-width: 500px;
-    border-radius: 20px;
+    border: 4px outset darkgray;
+    border-radius: 10px;
     margin: 150px 20px 0 20px;
     padding: 20px;
 }
@@ -67,9 +68,33 @@ body {
     padding: 4px;
 }
 
+#signup-form div input :current {
+    border-radius: 4px;
+    padding: 4px;
+    border-color: blue;
+}
+
+#signup-form div input:hover {
+    box-shadow: 0 5px 15px;
+}
+
 button[type="submit"] {
     margin-top: 15px;
-    padding: 4px 10px;
+    padding: 8px 16px;
+    background-color: #c65603;
+    border: 3px outset black;
+    border-radius: 10px;
+    font-weight: bold;
+    opacity: .8;
+}
+
+button[type="submit"]:focus {
+    background-color: #c81807;
+}
+
+button[type="submit"]:hover {
+    opacity: 1;
+    box-shadow: 0 5px 15px;
 }
 
 #trouble-link {
